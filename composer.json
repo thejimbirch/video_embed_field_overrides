@@ -1,0 +1,13 @@
+{
+  "name": "xenomedia/video_embed_field_overrides",
+  "type": "drupal-custom-module",
+  "description": "Drupal 8 Module that overrides YouTube and Vimeo parameters in Video Embed fields.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/xenomedia/video_embed_field_overrides",
+  "support": {
+    "issues": "https://github.com/xenomedia/video_embed_field_overrides/issues",
+    "source": "https://github.com/xenomedia/video_embed_field_overrides"
+  },
+  "require": { }
+}

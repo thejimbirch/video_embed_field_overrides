@@ -1,0 +1,7 @@
+name: Video Embed Field Overrides
+type: module
+description: Overrides YouTube and Vimeo parameters in Video Embed fields.
+core: 8.x
+package: Video Embed Field
+dependencies:
+  - video_embed_field

@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Video Embed Field Overrides file.
+ */
+
+/**
+ * Implements theme_preprocess_video_embed_iframe().
+ *
+ * Function comes from https://www.drupal.org/node/2688349.
+ * Find a full list of YouTube player parameters at:
+ * https://developers.google.com/youtube/player_parameters.
+ */
+function video_embed_field_overrides_preprocess_video_embed_iframe__youtube(&$variables) {
+  // Automatically play video.
+  $variables['query']['autoplay'] = '0';
+  // Display controls.
+  $variables['query']['controls'] = '0';
+  // Loop the video. Does not work.
+  $variables['query']['loop'] = '0';
+  // Display the title.
+  $variables['query']['showinfo'] = '0';
+}
+
+/**
+ * Implements theme_preprocess_video_embed_iframe().
+ *
+ * Find a full list of Vimeo player parameters at:
+ * https://developer.vimeo.com/apis/oembed.
+ */
+function video_embed_field_overrides_preprocess_video_embed_iframe__vimeo(&$variables) {
+  // Automatically play video.
+  $variables['query']['autoplay'] = 'false';
+  // Display the byline.
+  $variables['query']['byline'] = 'false';
+  // Loop the video. Does not work.
+  $variables['query']['loop'] = 'false';
+  // Display the user's portrait.
+  $variables['query']['portrait'] = 'false';
+  // Display the title.
+  $variables['query']['title'] = 'false';
+}
